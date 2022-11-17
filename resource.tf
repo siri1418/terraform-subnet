@@ -16,3 +16,15 @@ resource "azurerm_subnet" "my_sub1" {
   virtual_network_name = azurerm_virtual_network.rgvn.name
   address_prefixes     =[var.my_subnet1.address_prefixes]
 }
+resource "azurerm_subnet" "my_sub2" {
+  name =   var.my_subnet2.name
+  resource_group_name = azurerm_resource_group.resgrp.name
+  virtual_network_name = azurerm_virtual_network.rgvn.name
+  address_prefixes = [var.my_subnet2.address_prefixes]
+}
+resource "azurerm_subnet" "my_sub3" {
+  name =   var.my_subnet3.name
+  resource_group_name = azurerm_resource_group.resgrp.name
+  virtual_network_name = azurerm_virtual_network.rgvn.name
+  address_prefixes = [var.my_subnet3.address_prefixes]
+}

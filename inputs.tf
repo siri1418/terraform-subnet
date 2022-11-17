@@ -17,3 +17,15 @@ variable "my_subnet1" {
   })
 
 }
+variable "my_subnet2" {
+  type = object({
+    name = string
+    address_prefixes =string
+  })
+}
+variable "my_subnet3" {
+  type = object({
+    name=string
+    address_prefixes=string
+  })
+}
